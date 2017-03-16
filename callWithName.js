@@ -13,8 +13,8 @@ var callWithName = function(name, fn, options){
         context = options.context || window;
         context[name] = fn;
         context[name].toString = function(){
-            fn.call(context);
-            return options.returnValue ||undefined;
+            var sendBack = fn.call(context);
+            return sendBack || options.returnValue ||undefined;
         }
     }else{
         errorMsg = [];
