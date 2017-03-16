@@ -1,6 +1,6 @@
 # callWithName
 ##### Mini JS library for calling functions without use of ()
-If you ever want to call any function without the use if appending '()' at the end of it then this libray will be useful.
+If you ever want to call any function without the use of appending '()' at the end of it then this libray will be useful.
 
 ## Example:
 ````
