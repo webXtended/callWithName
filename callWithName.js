@@ -27,3 +27,8 @@ var callWithName = function(name, fn, options){
         console.info("for more details visit https://github.com/webXtended/callWithName");
     }
 };
+
+callWithName.toString = function(){
+    return "callWithName is a mini JS library for calling functions without use of ()." +
+        "\nMore info at https://github.com/webXtended/callWithName";
+};
