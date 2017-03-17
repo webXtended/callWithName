@@ -3,12 +3,30 @@
     <title>Call With Name</title>   
   
   <style>
-    .contentContainer {
+  
+   a.githublink {
+  	height: 17px;
+  	width: 101px;
+  	display: block;
+  	padding: 10px;
+  	background-color: #343434;
+  	color: white;
+  	text-decoration: none;
+  	cursor: pointer;
+  	border-radius: 6px;
+  	font-family: monospace;
+  	position: absolute;
+  	right: 10px;
+  	top: 10px;
+  }
+
+  .contentContainer {
       width: 700px;
       margin: 0 auto;
       padding: 20px;
       background-color: white;
       box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+      position:relative;
   }
 
   body {
@@ -26,7 +44,7 @@
 </head>
 <body>
   
-  <div class="contentContainer" itemprop="text"><h1><a class="anchor" href="#callwithname" aria-hidden="true"></a>callWithName</h1>
+  <div class="contentContainer" itemprop="text"><h1><a class="anchor" href="#callwithname" aria-hidden="true"></a>callWithName</h1><a class="githublink" href="https://github.com/webXtended/callWithName">View on github</a>
 <h5><a id="user-content-mini-js-library-for-calling-functions-without-use-of-" class="anchor" href="#mini-js-library-for-calling-functions-without-use-of-" aria-hidden="true"></a>Mini JS library for calling functions without use of ()</h5>
 <p>If you ever want to call any function without the use of appending '()' at the end of it then this libray will be useful.</p>
 <h2><a id="user-content-example" class="anchor" href="#example" aria-hidden="true"></a>Example:</h2>
@@ -63,9 +81,6 @@ callWithName('printA', function(){console.log(obj.a)},{contenxt:obj});
 </code></pre>
 </div>
   
-  
-  
-    <script type="text/javascript">(function(a){function b(){for(var a=0,b=arguments;a<b.length;a++)console.info('data layer push: ',b[a])}var c=a.push;a.push=function(){b.apply(this,arguments);c.apply(a,arguments)};b.apply(a,a)})(window.dataLayer || []);</script><script type="text/javascript" src="./callWithName.js"></script>
-
-
-</body></html>
+<script type="text/javascript" src="./callWithName.js"></script>
+</body>
+</html>
