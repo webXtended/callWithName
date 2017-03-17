@@ -1,9 +1,71 @@
-<html>
-<head>
+<html><head>
     <meta charset="UTF-8">
     <title>Call With Name</title>   
+  
+  <style>
+    .contentContainer {
+      width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+  }
+
+  body {
+      background-color: #343434;
+  }
+
+      pre {
+      background-color: #ddf2ff;
+      padding: 5px;
+      font-family: monospace;
+    }
+
+  </style>
+  
 </head>
 <body>
-    <script type="text/javascript" src="./callWithName.js"></script>
-</body>
-</html>
+  
+  <div class="contentContainer" itemprop="text"><h1><a class="anchor" href="#callwithname" aria-hidden="true"></a>callWithName</h1>
+<h5><a id="user-content-mini-js-library-for-calling-functions-without-use-of-" class="anchor" href="#mini-js-library-for-calling-functions-without-use-of-" aria-hidden="true"></a>Mini JS library for calling functions without use of ()</h5>
+<p>If you ever want to call any function without the use of appending '()' at the end of it then this libray will be useful.</p>
+<h2><a id="user-content-example" class="anchor" href="#example" aria-hidden="true"></a>Example:</h2>
+<pre><code>count //instead of count()
+someObject.getName // indtead of someObject.getName()
+</code></pre>
+<h2><a id="user-content-how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"></a>How To Use</h2>
+<p><strong>callWithName(name, function, options)</strong></p>
+<ul>
+<li>name     : the name by which you want to identity and call the function.</li>
+<li>function : the function to be called by the given name.</li>
+<li>options  : contains values for context and return value</li>
+</ul>
+<pre><code>function showError(){
+  alert("Something went wrong");
+}
+callWithName("showError", showError);
+
+//use like
+showError;
+//instead of
+showError();
+
+</code></pre>
+<p>same can be done by passing the function annonymously</p>
+<pre><code>callWithName("showError", function(){
+  alert("Something went wrong");
+});
+
+</code></pre>
+<p>context can also be passed</p>
+<pre><code>var obj = {a:1,b:2};
+callWithName('printA', function(){console.log(obj.a)},{contenxt:obj});
+</code></pre>
+</div>
+  
+  
+  
+    <script type="text/javascript">(function(a){function b(){for(var a=0,b=arguments;a<b.length;a++)console.info('data layer push: ',b[a])}var c=a.push;a.push=function(){b.apply(this,arguments);c.apply(a,arguments)};b.apply(a,a)})(window.dataLayer || []);</script><script type="text/javascript" src="./callWithName.js"></script>
+
+
+</body></html>
