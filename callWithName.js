@@ -1,7 +1,7 @@
 /*!
  * CallWithName v1.0
  *
- * Copyright 2015, Himanshu Tanwar
+ * Copyright 2017, Himanshu Tanwar
  * Released under the MIT license
  * https://github.com/webXtended/callWithName
  * Date: 2017-03-16
